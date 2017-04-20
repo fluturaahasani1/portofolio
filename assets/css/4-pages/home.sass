@@ -1,0 +1,379 @@
+* 
+  margin: 0 
+  padding: 0
+  list-style: none
+  text-decoration: none
+
+body
+  margin: 0
+  background-color: $silver
+  overflow-x: hidden
+
+header 
+  z-index: 100
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background: rgba(0,0,0, .6)
+  height: 50px
+  width: 100%
+
+  h2
+    margin: 0
+    padding: 10px
+    display: inline-block
+    float: left
+
+.desktop-nav
+  display: inline-block
+  float: right
+  padding: 15px;
+  @media (max-width: 1000px)
+    display: none
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background: #000
+
+  ul
+    display: inline-block
+    float: right
+    right: 0
+    margin-right: 40px
+    @media (max-width: 1000px)
+      margin-top: 30%
+      width: 100%
+      height: 100%
+      float: none
+      text-align: center
+
+
+    li 
+      display: inline-block
+      text-align: center
+
+      @media (max-width: 1000px)
+        display: block
+        width: 100%
+        float: left
+        text-align: center
+        padding: 10px 0
+
+
+
+      a 
+        color: darken(#fff , 20%) 
+        font-size: 18px
+        text-transform: uppercase
+        font-family: freight-sans-pro, sans-serif
+        font-weight: 500
+        margin-left: 20px
+        display: block
+        position: relative
+        text-decoration: none !important;
+
+      a:hover
+        color: #fff
+      
+      a:before
+        content: ' ';
+        background-color: #ffffff
+        position: absolute
+        display: block
+        bottom: -2px
+        height: 2px
+        width: 0%
+        right: 0
+        left: auto
+        -webkit-transition: width 0.3s cubic-bezier(1, 0, 0, 1)
+        -moz-transition: width 0.3s cubic-bezier(1, 0, 0, 1)
+        -o-transition: width 0.3s cubic-bezier(1, 0, 0, 1)
+        transition: width 0.3s cubic-bezier(1, 0, 0, 1)
+      a:hover:before
+        left: 0;
+        right: auto;
+        width: 100%;
+#hero 
+  width: 100%
+  height: auto
+  display: flex
+  justify-content: center
+  align-items: center
+
+  img
+    width: 100%
+    height: 100vh
+    max-widh: 100%
+    @media (max-width: 1024px)
+      height: auto
+
+  h1 
+    position: absolute
+    font-size: 60px
+    color: #fff
+    font-family: "ff-meta-serif-web-pro", Georgia, serif
+
+    a 
+      color: #fff
+      cursor: default
+      text-decoration: none
+
+/*Services*/
+.services
+  text-align: center
+  padding-top: 96px
+
+.services .container
+  border-bottom: 1px solid #ddd
+
+.single_service
+  padding-bottom: 96px
+
+.single_service i
+  font-size: 25px
+  color: #22A7F0
+
+.single_service h2
+  color: #000000
+  font-size: 25px
+  text-transform: uppercase
+
+.single_service p
+  color: #404040
+  font-size: 16px
+.single_service div
+  width: 100px
+  height: 100px
+  overflow: hidden
+  border-radius: 50%
+  margin: 0 auto
+
+  img
+    widht: 100%
+    height: auto
+    max-width: 100%
+
+.hi-text 
+  color: #404040 !important
+  font-size: 18px !important
+  width: 40%
+  margin: 0 auto
+  font-family: "ff-meta-serif-web-pro", Georgia, serif
+
+.services h1
+  text-align: center
+  margin: 20px auto
+  color: #000
+.what
+  padding-bottom: 70px !important
+.costum-btn 
+  background: #22A7F0
+  padding: 15px 40px
+  line-height: 40px
+  text-transform: uppercase
+  font-size: 20px
+  color: #fff
+  -moz-transition: all 300ms ease-in-out
+  -webkit-transition: all 300ms ease-in-out
+  transition: all 300ms ease-in-out
+  border-radius: 5px
+  
+  &:hover
+    text-decoration: none
+    color: #fff
+    background: darken(#0074D9, 10%)
+  i 
+    color: #fff
+    margin-right: 10px
+    padding-top: 5pxs
+
+.single_image
+  margin-right: 3px
+  position: relative
+  transition: all 1s
+
+.single_image img
+  width: 100%
+
+.single_image:hover div.image_overlay
+  opacity: 1
+
+.image_overlay
+  position: absolute
+  width: 100%
+  height: 100%
+  background: rgba(34, 167, 240,.9)
+  left: 0
+  top: 0
+  opacity: 0
+  transition: all 1s
+
+.image_overlay a
+  position: absolute
+  top: 20px
+  right: 20px
+  color: #fff
+  text-decoration: none
+  text-transform: uppercase
+
+.image_overlay h2
+  position: absolute
+  bottom: 28px
+  left: 20px
+  font-size: 25px
+  color: #fff
+  text-transform: uppercase
+  letter-spacing: 3px 
+
+.image_overlay h4
+  position: absolute
+  bottom: 11px
+  left: 20px
+  color: #fff
+  font-size: 14px
+  text-transform: uppercase 
+
+.no_padding
+  padding-left: 0px !important
+  padding-right: 0px !important
+
+.work_title h1, .contact_title h1
+  font-size: 25px
+  color: #000
+  letter-spacing: 5px
+  padding-top: 80px
+  text-transform: uppercase
+  margin-bottom: 20px
+
+.work_title img, .contact_title img
+  margin-bottom: 30px
+
+.work_title p, .contact_title p
+  font-size: 14px
+  color: #000
+  margin-bottom: 100px
+
+.last_padding 
+  padding-right: 0px
+
+.pad_top 
+  padding-top: 2px
+
+.left h2
+  margin-top: 60px
+  margin-bottom: 20px
+  font-size: 18px
+  color: #000
+  font-weight: bold
+
+.left p
+  margin-bottom: 60px
+  font-size: 14px
+  color: #000
+
+.baton
+  margin-top: 65px
+
+.cs-btn, .cs-btn:active, .cs-btn:visited, .cs-btn:focus
+  color: #fff
+  background-color: #000
+  border-radius: 0px
+  outline: none
+  padding: 10px 40px
+  text-transform: uppercase
+  letter-spacing: 2px
+  transition: all 1s
+
+.cs-btn:hover
+  background: #22A7F0
+
+.call_to_action .container
+  padding-bottom: 60px
+  border-bottom: 1px solid #ddd
+
+/*Footer*/
+footer
+  background-color: #f1f1f1
+  padding-top: 50px
+  padding-bottom: 50px
+
+.footer_logo
+.footer_logo img
+.social
+  padding-top: 65px
+
+.social h2
+  text-transform: uppercase
+  font-size: 16px 
+
+ul.icon_list
+  margin: 0
+  padding: 0
+  list-style: none
+  text-align: center
+  margin-top: 20px
+
+ul.icon_list li
+  display: inline
+  padding-left: 3px
+  padding-right: 3px
+
+ul.icon_list li a
+  display: inline-block
+  color: #636363
+  border: 2px solid #636363
+  border-radius: 50%
+  text-align: center
+  width: 40px
+  height: 40px
+  text-align: center
+  line-height: 28px
+  transition: all 1s
+  padding: 5px
+
+ul.icon_list li a:hover
+  color: #22A7F0
+  border-color:#22A7F0 
+
+.copyright_text
+  padding-top: 80px 
+
+.copyright_text p
+  color: #636363
+  font-size: 14px
+  text-transform: uppercase
+  margin-bottom: 0px
+  letter-spacing: 0px
+
+.copyright_text a
+  color:#22A7F0
+  text-transform:uppercase
+  font-weight: 700
+  text-decoration:none
+  
+.sub-form
+  padding: 50px 0 !important
+
+  .title
+    padding-bottom: 20px
+
+.form-control
+  height: 38px !important
+  border: 2px solid #22A7F0 !important
+
+.sub-btn 
+  border: 2px solid #22A7F0 !important
+  transition: all 300ms ease-in-out
+  -moz-transition: all 300ms ease-in-out
+  -webkit-transition: all 300ms ease-in-out
+  background: #22A7F0 !important
+  color: #fff !important
+  &:hover
+    background: darken(#0074D9, 10%) !important
+    
+.costum-div
+  text-align: center
+  margin: 50px auto !important
