@@ -485,6 +485,9 @@ header {
   width: 40%;
   margin: 0 auto;
   font-family: "ff-meta-serif-web-pro", Georgia, serif; }
+  @media (max-width: 1000px) {
+    .hi-text {
+      width: 100%; } }
 
 .services h1 {
   text-align: center;
@@ -625,7 +628,7 @@ footer {
   padding-bottom: 50px; }
 
 .social {
-  padding-top: 65px; }
+  padding-top: 35px; }
 
 .social h2 {
   text-transform: uppercase;
@@ -696,3 +699,7 @@ ul.icon_list li a:hover {
 .costum-div {
   text-align: center;
   margin: 50px auto !important; }
+
+.pulse:hover {
+  -webkit-animation: bounce 1s;
+  animation: pulse 400ms infinite; }
