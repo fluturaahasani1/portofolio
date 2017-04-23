@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee')
+
 * 
   margin: 0 
   padding: 0
@@ -8,6 +10,7 @@ body
   margin: 0
   background-color: $silver
   overflow-x: hidden
+  overflow: hidden
 
 header 
   z-index: 100
@@ -15,16 +18,28 @@ header
   top: 0
   left: 0
   right: 0
-  background: rgba(0,0,0, .6)
+  background: rgba(0,0,0, 1)
   height: 50px
   width: 100%
+
+  a
+    color: #fff !important
+    transition: all 300ms
+
+    &:hover
+      color: #00AFF0 !important
+      text-decoration: none
+      
 
   h2
     margin: 0
     padding: 10px
     display: inline-block
     float: left
-
+    font-family: 'Bungee', cursive !important
+    
+    img
+      margin-top: -10px
 .desktop-nav
   display: inline-block
   float: right
@@ -65,7 +80,7 @@ header
 
 
       a 
-        color: darken(#fff , 20%) 
+        color: #fff 
         font-size: 18px
         text-transform: uppercase
         font-family: freight-sans-pro, sans-serif
@@ -74,9 +89,10 @@ header
         display: block
         position: relative
         text-decoration: none !important;
+        transition: all 300ms
 
       a:hover
-        color: #fff
+        color: #00AFF0 !important
       
       a:before
         content: ' ';
@@ -96,6 +112,7 @@ header
         left: 0;
         right: auto;
         width: 100%;
+        background-color: #00AFF0
 #hero 
   width: 100%
   height: auto
@@ -134,7 +151,7 @@ header
 
 .single_service i
   font-size: 25px
-  color: #22A7F0
+  color: #00AFF0
 
 .single_service h2
   color: #000000
@@ -172,7 +189,7 @@ header
 .what
   padding-bottom: 70px !important
 .costum-btn 
-  background: #22A7F0
+  background: #00AFF0
   padding: 15px 40px
   line-height: 40px
   text-transform: uppercase
@@ -181,12 +198,12 @@ header
   -moz-transition: all 300ms ease-in-out
   -webkit-transition: all 300ms ease-in-out
   transition: all 300ms ease-in-out
-  border-radius: 5px
+  border-radius: 0px
   
   &:hover
     text-decoration: none
     color: #fff
-    background: darken(#0074D9, 10%)
+    background: darken(#00AFF0, 10%)
   i 
     color: #fff
     margin-right: 10px
@@ -290,7 +307,7 @@ header
   transition: all 1s
 
 .cs-btn:hover
-  background: #22A7F0
+  background: #00AFF0
 
 .call_to_action .container
   padding-bottom: 60px
@@ -337,8 +354,8 @@ ul.icon_list li a
   padding: 5px
 
 ul.icon_list li a:hover
-  color: #22A7F0
-  border-color:#22A7F0 
+  color: #00AFF0
+  border-color: #00AFF0
 
 .copyright_text
   padding-top: 80px 
@@ -364,17 +381,17 @@ ul.icon_list li a:hover
 
 .form-control
   height: 38px !important
-  border: 2px solid #22A7F0 !important
+  border: 2px solid #00AFF0 !important
 
 .sub-btn 
-  border: 2px solid #22A7F0 !important
+  border: 2px solid #00AFF0 !important
   transition: all 300ms ease-in-out
   -moz-transition: all 300ms ease-in-out
   -webkit-transition: all 300ms ease-in-out
-  background: #22A7F0 !important
+  background: #00AFF0 !important
   color: #fff !important
   &:hover
-    background: darken(#0074D9, 10%) !important
+    background: darken(#00AFF0, 10%) !important
     
 .costum-div
   text-align: center
@@ -383,3 +400,8 @@ ul.icon_list li a:hover
 .pulse:hover
   -webkit-animation: bounce 1s
   animation: pulse 400ms infinite
+
+
+.nav-active
+  color: #00AFF0 !important
+  border-bottom: 2px solid #00AFF0
